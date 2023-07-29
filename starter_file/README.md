@@ -78,7 +78,7 @@ The model can be futher improved by 2 increasing the estimate timeout for autoML
 
 # Hyperparameter Tuning
 
-Initially in the training script (train.py),the dataset (health care diabetes.csv) is retrieved from the URL (https://raw.githubusercontent.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/main/Capstone%20Project/Dataset/Heart_Failure_Clinical_Records_Dataset.csv](https://raw.githubusercontent.com/Nikhil-Bansal19/MLE_CapstoneProject/master/health%20care%20diabetes.csv) provided using TabularDatasetFactory Class (Contains methods to create a tabular dataset for Azure Machine Learning).Then the data is being split as train and test with the ratio of 70:30.
+Initially in the training script (train.py),the dataset (health care diabetes.csv) is retrieved from the URL (https://raw.githubusercontent.com/Nikhil-Bansal19/MLE_CapstoneProject/master/health%20care%20diabetes.csv) provided using TabularDatasetFactory Class (Contains methods to create a tabular dataset for Azure Machine Learning).Then the data is being split as train and test with the ratio of 70:30.
 
 The classification algorithm used here is Logistic Regression.Logistic regression is a well-known method in statistics that is used to predict the probability of an outcome, and is especially popular for classification tasks. The algorithm predicts the probability of occurrence of an event by fitting data to a logistic function. Then the training(train.py) script is passed to estimator and HyperDrive configurations to predict the best model and accuracy.The HyperDrive run is executed successfully with the help of parameter sampler, policy, estimator and HyperDrive Config, before that Azure workspace,experiment and cluster is created successfully.
 
