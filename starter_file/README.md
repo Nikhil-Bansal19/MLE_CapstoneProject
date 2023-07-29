@@ -9,6 +9,8 @@ This project is part of the Udacity Azure ML Nanodegree. The dataset used in thi
 This Dataset is available publicy in Kaggle
 
 The datasets consists of several medical predictor variables and one target variable (Outcome). Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and more.
+<img width="1727" alt="Screenshot 2023-07-29 at 8 22 38 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/c3cfebf8-5e80-4aac-ad7d-1f355705a348">
+
 
 ##Variables Description
 Pregnancies Number of times pregnant
@@ -36,6 +38,8 @@ For the moodel,trained with HyperDrive functionalities,the dataset is saved in o
 ## AutoML
 
 For the model trained with AutoML functionalities, the dataset is registered with the help of "from local files" option and loaded from Azure workspace.
+<img width="1224" alt="Screenshot 2023-07-29 at 6 48 58 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/818907bc-e093-4cf0-b6b7-cca51be06a39">
+
 
 
 # Automated ML
@@ -51,30 +55,27 @@ The models used here are LightGBM,SVM, XGBoostClassifier, RandomForest, VotingEn
 
 Finally the experiment is being submitted and using the Notebook widget(RunDetails(remote_run).show()), it is visualized. Once the run is successfully completed or executed, the best model is retrieved and saved in output folder in source directory.
 
-AutoML_Config
+<img width="635" alt="Screenshot 2023-07-29 at 6 57 48 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/3d5f759a-a45d-4e8b-b7dc-be0d4ec425a8">
+<img width="1200" alt="Screenshot 2023-07-29 at 6 58 14 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/3e43ad59-9981-4bbf-a550-4847b83181d7">
+<img width="841" alt="Screenshot 2023-07-29 at 6 58 26 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/27df570f-5774-41d1-a6df-ea172993371a">
+<img width="1077" alt="Screenshot 2023-07-29 at 7 21 04 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/81376e84-9155-4364-81d7-cb1642697fd4">
 
-6.RunDeatils
+<img width="1219" alt="Screenshot 2023-07-29 at 7 22 51 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/9c417f1a-a1f8-4699-a230-beae7682fb0c">
 
-8.Data_Guardrails
 
-13.DatasetDetails
+<img width="890" alt="Screenshot 2023-07-29 at 7 24 59 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/51c4c16b-04fa-4494-8cb1-cdfb87f742e5">
+<img width="1204" alt="Screenshot 2023-07-29 at 7 23 05 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/c997849c-d40b-42f1-b919-b9c897f012b1">
+<img width="1194" alt="Screenshot 2023-07-29 at 7 23 20 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/06ae22ce-1bd2-43fd-a396-cdb49e6f6d8c">
 
-4.Best_Model
+<img width="838" alt="Screenshot 2023-07-29 at 7 28 41 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/3335a66e-c8bc-490a-a9ce-bdf03bc85574">
 
-AutoML_ID
-
-Screenshots are available in AutoML/Screenshots folder
 
 ## Results
 The first model we built is with the help of Azure AutoML for training many types of models such as LightGBM, XGBoostClassifier, RandomForest, VotingEnsemble, StackEnsemble etc.The best accuracy obtained from this model is 78.39%
 
-1.Run_details
+<img width="1193" alt="Screenshot 2023-07-29 at 7 23 42 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/44b2d13d-72e5-44a9-b6f4-338649b6153b">
+<img width="1128" alt="Screenshot 2023-07-29 at 7 23 55 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/1f229c4e-af08-4944-988a-e33faf63d745">
 
-2.Accuracy
-
-3.ACU_Weighted
-
-The model can be futher improved by 2 increasing the estimate timeout for autoML to find best model.Thus a longer timeout will have greater number of models to run and thus higher the performance rate too.
 
 # Hyperparameter Tuning
 
@@ -88,26 +89,22 @@ The ScriptRunConfig is created with the training script(train.py), directory pat
 
 Finally the experiment is being submitted and using the Notebook widget(RunDetails(hyperdrive_run).show()), it is visualized. Once the run is successfully completed or executed, the best model is retrieved and saved in output folder in source directory.The saved model then registered.
 
-9.Experiment
+<img width="880" alt="Screenshot 2023-07-29 at 9 17 25 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/52628fa4-7dce-49e0-b232-665c0689c130">
+<img width="1190" alt="Screenshot 2023-07-29 at 9 20 30 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/aa48b24e-cee1-4f5b-9d15-e0e4d5d63879">
+<img width="777" alt="Screenshot 2023-07-29 at 9 21 36 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/cdafdb58-ce29-4e0c-adbd-2afac3c3f9ff">
+<img width="836" alt="Screenshot 2023-07-29 at 9 21 44 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/602c4df2-8e8f-4365-97c0-7c0003de26eb">
+<img width="1205" alt="Screenshot 2023-07-29 at 9 31 19 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/37e8135f-ec18-4bb4-a5bd-ecb261840659">
 
-5.Parameters_Graph
-
-3.Accuracy
-
-11.Run_Details
-
-6.Best_Model
-
-HyperDrive_Registered_Model
-
-Screenshots are available in Hyperdrive/Screenshots folder
 
 ## Results
 The second model we built is trained with Logistic regression and HyperDrive parameters which are tuned with the help of Azure ML python SDK and HyperDrive tools(Azure HyperDrive functionalities).The best accuracy obtained from this model is 75.19%
+<img width="782" alt="Screenshot 2023-07-29 at 9 33 02 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/a4d43b42-d621-4047-b6e9-0ff641d6a6ad">
 
-1.HyperDrive_Run
+<img width="1210" alt="Screenshot 2023-07-29 at 9 31 48 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/e34d887f-c320-4d1a-b6ee-e25b73414158">
+<img width="1154" alt="Screenshot 2023-07-29 at 9 31 56 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/263d7432-dcc7-4322-9ade-95034734cb1b">
 
-2.Best_Metrics
+<img width="833" alt="Screenshot 2023-07-29 at 9 33 41 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/fd13f25a-ea47-4b84-9006-1dd99e3e4b49">
+<img width="887" alt="Screenshot 2023-07-29 at 9 33 55 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/da88a73c-07b8-4698-96bc-6b73c4da971c">
 
 The model can be futher improved with the help of tuning other parameters such as the criterion used to define the optimal split and the min/max samples leaf number of samples in the leaf node of each tree.
 
@@ -116,23 +113,18 @@ HyperDrive’s best run accuracy = 75.19%
 
 AutoML’s best run accuracy = 78.39%
 
+<img width="1224" alt="Screenshot 2023-07-29 at 9 34 05 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/14108814-6528-4719-a977-e5b2b39337f9">
+
 Thus,Automl's model has the highest accuracy.The model with the best accuracy is deployped as per the instructions,so the AutoML's best model is deployed.
 
 Initially, the best model is registered and it's necessary files are downloaded.Then the Environment and inference is created with the help of required conda dependencies and score.py script file which has the intialization and exit function defined for the best model and the model is deployed with ACI(Azure Container Instance) and configurations such as cpu_cores=1, memory_gb=1.Once the deployment is sucessful, applications insights is enabled and the state of the service is verified.Then the behaviour of the endpoint is analyzed and the service is deleted
 
-Response
+<img width="869" alt="Screenshot 2023-07-29 at 8 47 19 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/725c54fb-4dfc-4ef5-8093-8b1a3d42661e">
+<img width="886" alt="Screenshot 2023-07-29 at 8 47 38 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/228c4c4c-dae5-4fc7-afe7-81f10841e11e">
+<img width="1147" alt="Screenshot 2023-07-29 at 8 50 09 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/a221932b-70a6-4ab7-ad58-383f40ed5985">
+<img width="616" alt="Screenshot 2023-07-29 at 8 50 23 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/4cda52fc-da61-42fd-9b31-f1588b53c2ad">
+<img width="800" alt="Screenshot 2023-07-29 at 8 50 36 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/6d087c97-e738-471c-93c1-21d0b782094e">
+<img width="808" alt="Screenshot 2023-07-29 at 8 53 58 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/1fb9602f-bd43-4c2c-8886-10dab0c6d519">
+<img width="1232" alt="Screenshot 2023-07-29 at 8 57 44 PM" src="https://github.com/Nikhil-Bansal19/MLE_CapstoneProject/assets/47290347/0c89a4de-6bb9-4593-9180-3198cfcd33d7">
 
-Response_1
-
-1.Model
-
-2.Model_details
-
-4.Endpoints
-
-7.Endpoint_Detail
-
-6.Service_Delete
-
-Screensots are available in Model Deployment folder
 
