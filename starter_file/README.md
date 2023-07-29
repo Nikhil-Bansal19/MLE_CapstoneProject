@@ -3,7 +3,9 @@ Diabetes Predictions Using Microsoft Azure
 This project is part of the Udacity Azure ML Nanodegree. The dataset used in this project is originally from NIDDK. The objective is to predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. We will use Azure to configure a cloud-based machine learning production model and deploy it. We use Hyper Drive and Auto ML methods to develop the model. Then the model with higest accuary is retrieved(voting ensemble in this case) and deployed in cloud with Azure Container Instances(ACI) as a webservice, also by enabling the authentication. Once the model is deployed, the behaviour of the endpoint is analysed by getting a response from the service and logs are retrived at the end.
 
 Dataset
+
 Overview
+
 This Dataset is available publicy in Kaggle
 
 The datasets consists of several medical predictor variables and one target variable (Outcome). Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and more.
@@ -20,20 +22,24 @@ Age Age in years
 Outcome Class variable (either 0 or 1). 268 of 768 values are 1, and the others are 0
 
 Task
+
 The objective is to predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset
 
 Access
+
 In order to access the dataset, I used 2 different methods for 2 different models.
 
 HyperDrive
+
 For the moodel,trained with HyperDrive functionalities,the dataset is saved in one of the public respositories (my git repo) and loaded with the help of TabularDataset.
 
 AutoML
+
 For the model trained with AutoML functionalities, the dataset is registered with the help of "from local files" option and loaded from Azure workspace.
 
-12.Registered_Dataset
 
 Automated ML
+
 AutoML also referred as Automated machine learning or automated ML, is the process of automating the time consuming, iterative tasks of machine learning model development. Automated ML is applied when you want Azure Machine Learning to train and tune a model for you using the target metric you specify.
 
 Initially the dataset(health care diabetes.csv) is registered with the help of "from local files" option and loaded from Azure workspace. It is then converted to pandas dataframe,before that the Workspace,experiment and the cluster are created.
@@ -71,6 +77,7 @@ The first model we built is with the help of Azure AutoML for training many type
 The model can be futher improved by 2 increasing the estimate timeout for autoML to find best model.Thus a longer timeout will have greater number of models to run and thus higher the performance rate too.
 
 Hyperparameter Tuning
+
 Initially in the training script (train.py),the dataset (health care diabetes.csv) is retrieved from the URL (https://raw.githubusercontent.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/main/Capstone%20Project/Dataset/Heart_Failure_Clinical_Records_Dataset.csv](https://raw.githubusercontent.com/Nikhil-Bansal19/MLE_CapstoneProject/master/health%20care%20diabetes.csv) provided using TabularDatasetFactory Class (Contains methods to create a tabular dataset for Azure Machine Learning).Then the data is being split as train and test with the ratio of 70:30.
 
 The classification algorithm used here is Logistic Regression.Logistic regression is a well-known method in statistics that is used to predict the probability of an outcome, and is especially popular for classification tasks. The algorithm predicts the probability of occurrence of an event by fitting data to a logistic function. Then the training(train.py) script is passed to estimator and HyperDrive configurations to predict the best model and accuracy.The HyperDrive run is executed successfully with the help of parameter sampler, policy, estimator and HyperDrive Config, before that Azure workspace,experiment and cluster is created successfully.
